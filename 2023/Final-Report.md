@@ -80,14 +80,13 @@ The **Music Blocks v4** project is “_a complete overhaul of the original Music
 
 ## Assigned Issues
 
-| Title                                                                         | Link                                                           |
-| ----------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| List properties for defining and customising bricks                           | [#327](https://github.com/sugarlabs/musicblocks-v4/issues/327) |
-| Implement a class-based inheritance structure for bricks                      | [#328](https://github.com/sugarlabs/musicblocks-v4/issues/328) |
-| Implement final classes for the 4 brick types:                                |                                                                |
-| Data, Expression, Statement, and Block and create React components for bricks | [#329](https://github.com/sugarlabs/musicblocks-v4/issues/329) |
-| Calculate bounding boxes in brick path utility                                | [#341](https://github.com/sugarlabs/musicblocks-v4/issues/341) |
-| Render a dummy workspace with the different types of bricks, and tree data    | [#360](https://github.com/sugarlabs/musicblocks-v4/issues/360) |
+| Title                                                                                                                              | Link                                                           |
+| ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| List properties for defining and customising bricks                                                                                | [#327](https://github.com/sugarlabs/musicblocks-v4/issues/327) |
+| Implement a class-based inheritance structure for bricks                                                                           | [#328](https://github.com/sugarlabs/musicblocks-v4/issues/328) |
+| Implement final classes for the 4 brick types: <br/> Data, Expression, Statement, and Block and create React components for bricks | [#329](https://github.com/sugarlabs/musicblocks-v4/issues/329) |
+| Calculate bounding boxes in brick path utility                                                                                     | [#341](https://github.com/sugarlabs/musicblocks-v4/issues/341) |
+| Render a dummy workspace with the different types of bricks, and tree data                                                         | [#360](https://github.com/sugarlabs/musicblocks-v4/issues/360) |
 
 ## Pull Requests
 
