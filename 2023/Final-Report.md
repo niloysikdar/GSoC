@@ -194,7 +194,8 @@ Overall, when we move any specific brick, we need to update the position of that
 
 Here everything comes together and is working perfectly.
 
-<!-- TODO: Add the video here -->
+https://github.com/niloysikdar/GSoC/assets/58071992/3d70f684-566e-4e48-ae07-9abbea3537c5
+
 
 ### • Detecting and updating the positions of collision areas for the bricks
 
