@@ -50,7 +50,7 @@ The **Music Blocks v4** project is “_a complete overhaul of the original Music
 
 ## GSoC Project Proposal
 
-- [Project Proposal]()
+- [Project Proposal](./accepted-proposal.pdf)
 
 ## Project Repository
 
@@ -66,15 +66,15 @@ The **Music Blocks v4** project is “_a complete overhaul of the original Music
 
 ## Work Summary
 
-### Creating SVGs for Bricks
+### • Creating SVGs for Bricks
 
 Creating SVGs for bricks was a challenging task. I had to create SVGs for 4 different types of bricks and each brick had 8 different states (`hasNest`, `hasNotchArg`, `hasNotchInsTop`, `hasNotchInsBot`, `scale`, `nestLengthY`, `innerLengthX`, `argHeights`). I used an online tool [https://yqnn.github.io/svg-path-editor](https://yqnn.github.io/svg-path-editor) to visualize the path data and create the SVGs. I also used the SVGs from the old version of Music Blocks as a reference. Each one of the SVGs was created by hand and it took a good amount of time to create them. We also needed to take care of the dimensions and each pixel for the SVGs as we needed to calculate the collision areas later on. We also created a script/utility function to generate the path of the SVGs using different argument values. Moreover, we also created different classes for the bricks and also some stories to visualise those paths along with the SVGs.
 
-### Implementing a class-based inheritance structure for 4 brick types: Data, Expression, Statement, and Block and create React components for bricks
+### • Implementing a class-based inheritance structure for 4 brick types: Data, Expression, Statement, and Block and create React components for bricks
 
 We implemented a class-based inheritance structure for bricks. We created a base class `BrickModel` and then created 4 different classes for the different types of bricks. I created different public getter methods for the bricks to get the path, collision area, and other information; and implemented the missing abstract methods. I also created separate components for different types of bricks that used those classes to generate an instance object and use those data to render the bricks; and updated the storybook stories accordingly.
 
-### Implementing `extent` and `coords` for the args and notches
+### • Implementing `extent` and `coords` for the args and notches
 
 I implemented and fixed calculations to get the `extent` and `coords` values for the args and notches for all the bricks to detect the positions (x, y coordinates) and bounding boxes.
 
@@ -98,7 +98,7 @@ I implemented and fixed calculations to get the `extent` and `coords` values for
 <img src="https://github.com/sugarlabs/musicblocks-v4/assets/58071992/8146fb0a-b369-4be8-b351-bfe33fd2b7c0" width="400px" />
 <img src="https://github.com/sugarlabs/musicblocks-v4/assets/58071992/222315cf-a2fb-4a35-81a9-73c8cf754c8e" width="400px" />
 
-### Creating a dummy workspace inside the playground app
+### • Creating a dummy workspace inside the playground app
 
 Using those different types of bricks (`"data" | "expression" | "statement" | "block"`), I created a dummy workspace inside our playground app (modules/code-builder/playground).
 
@@ -150,7 +150,7 @@ So, after doing all of this, I successfully rendered the initial dummy workspace
 
 The dummy workspace state can be found here: [modules/code-builder/playground/pages/WorkSpace/data.ts](https://github.com/sugarlabs/musicblocks-v4/pull/361/files#diff-e71c31ef248cfcc0233649e45d2a26476768c87177d173460967496ee79e2097)
 
-### Moving the Bricks and updating the position and state properly following the rules of Music Blocks
+### • Moving the Bricks and updating the position and state properly following the rules of Music Blocks
 
 Now to do this, I needed to maintain some sort of centralized state where I could store all of the required dynamic data for each of the bricks along with their IDs (like coords). Also, I needed to update the data for the bricks while dragging them and needed to listen/subscribe to the changes for the data and update the UI according to that.
 
@@ -196,7 +196,7 @@ Here everything comes together and is working perfectly.
 
 <!-- TODO: Add the video here -->
 
-### Detecting and updating the positions of collision areas for the bricks
+### • Detecting and updating the positions of collision areas for the bricks
 
 We were already getting the positions of the bricks and updating them while moving them. Now we need to detect the collision areas for the bricks and update the positions of the collision areas accordingly. So, I rendered those collision areas inside the workspace (for visualization) and also updated their positions along with the bricks while moving them.
 
