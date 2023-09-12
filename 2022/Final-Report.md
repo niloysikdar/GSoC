@@ -1,6 +1,5 @@
-## This is the copy of the Final Work Report submitted to Google Summer of Code 2022. The original report can be found [here](https://github.com/scorelab/GSoC/blob/master/GSoC-2022/20-Niloy-Sikdar-React-Email.md)
+### This is the copy of the Final Work Report submitted to Google Summer of Code 2022. The original report can be found [here](https://github.com/scorelab/GSoC/blob/master/GSoC-2022/20-Niloy-Sikdar-React-Email.md)
 
-<br />
 <br />
 
 # React Email
